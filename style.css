@@ -1,0 +1,353 @@
+body, html {
+  margin:0 auto;
+  font-family: serif;
+  color: #343a40; /*light theme*/
+  color: white;
+  background-attachment:fixed;
+  /*-image: url('images/headerimage.jpg');*/
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-weight: bolder;
+  overflow-x: hidden;
+  text-rendering: optimizeLegibility;
+  font-style: normal;
+  font-weight:200;
+}
+body {
+  background-color: black;
+}
+body:before{
+  content: "";
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  background: url(images/bg.jpeg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  z-index: -10;
+}
+* {
+  box-sizing: border-box;
+  transition-property: inherit;
+  transition-duration: inherit;
+  transition-timing-function: inherit;
+  transition-delay: inherit;
+}
+header {
+  margin: 0;
+  padding: 0;
+  height: 100px;
+}
+.overlay {
+  transition: 2s;
+  height: 100%;
+  width: 100%;
+  display: none;
+  position: fixed;
+  z-index: 150;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0);
+}
+.overlay-content {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  margin-top: 0px;
+  z-index: 149;
+}
+
+.overlay-content a {
+  height: 20vh;
+  text-decoration: none;
+  font-size: 36px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+  height: 20vh;
+  background-color:;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: sans-serif;
+  letter-spacing: -3px;
+  z-index: 149;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #FF3838;background-color:;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  font-size: 60px;
+  color: red;
+  text-decoration: none;
+  float: right;
+  right:5px;
+  top:0;
+  margin: 20px;
+}
+.closebtn {
+  z-index: 150;
+}
+
+#menu {
+  float: right;
+  position: fixed;
+}
+.hamburger{
+  font-size: 40px;
+  color: red;
+  margin: 25px;
+  right: 0;
+  top:5px;
+  padding: 0px;
+}
+img.logo {
+  width: 100%;
+}
+img.links_logo {
+  height:40px;
+}
+img.album {
+  max-width: 300px;
+  display: flex;
+  margin: 0 auto;
+  padding: 20px;
+}
+div.gallery {
+  margin: 0 auto;
+  max-width:900px;
+}
+img.banner {
+  width: 70%;
+  margin: 40px auto 120px auto;
+  display: block;
+  padding: 1px;
+  background: linear-gradient(to bottom right, gray,white);
+  border-radius: 5px;
+  -webkit-box-shadow: 5px 5px 20px 0 rgba(0,0,0,.2);
+  box-shadow: 5px 5px 20px 0 rgba(0,0,0,.2);
+}
+main {
+  margin: 0 auto;
+  height: 100%;
+}
+
+svg {
+  margin:5px;
+}
+svg:hover {
+
+}
+video {
+  width: 100%;
+  max-width: 622px;
+  padding:1px;
+  background: linear-gradient(to bottom right, gray,white);
+  margin-bottom: 100px;
+}
+audio {
+  margin-bottom: 100px;
+}
+div.content {
+}
+div.content-wrapper {
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width:100%;
+  height: 70%;
+  overflow: hidden;
+  position: absolute;
+}
+div.content_store {
+  margin: 0 auto;
+  display: flex;
+}
+div.news {
+  margin: 0 auto;
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,0.1),0 1px 2px 0 rgba(0,0,0,0.06);
+  background-color:rgba(0,0,0,.9);
+  max-width:600px;
+  color:white;
+  margin-top:40px;
+  padding:20px;
+  border-radius:4px;
+}
+div.news_highlight {
+  margin: 0 auto;
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,0.1),0 1px 2px 0 rgba(0,0,0,0.06);
+  background:linear-gradient(to top left, #2980B960, #6DD5FA60, #0052D460);
+  max-width:600px;
+  color:white;
+  margin-top:40px;
+  padding:20px;
+  border-radius:4px;
+}
+div.links {
+  text-align:center;
+  z-index: 140;
+  display: block;
+  position: fixed;
+  bottom: 0;
+  margin: 10px;
+  height: ;
+}
+div.links2 {
+  text-align:center;
+  z-index: 140;
+  display: block;
+  position: fixed;
+  top: 10px;
+  margin: 25px;
+  background-color:;
+}
+div.links2 a{
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 2em;
+}
+div.links_br {
+  text-align:center;
+  z-index: 140;
+  display: block;
+  position: fixed;
+  bottom: 0;
+  right:0;
+  margin: 10px;
+  height: ;
+}
+svg {
+  box-sizing: content-box;
+  display: block;
+  margin: 10px 10px;
+}
+img.links:hover {
+  filter:drop-shadow(1px 1px 1px gray);
+}
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: -webkit-sticky;
+  position: sticky;
+  top:0;
+}
+p {
+  text-align:left;
+}
+ a {
+  color:inherit;
+}
+.links_br a {
+  display: block;
+  font-size: 1.6em;
+  padding: 10px 10px 5px 0;
+  text-align: right;
+  font-family: sans-serif;
+  font-weight: bold;
+  letter-spacing:-1px;
+  text-decoration: none;
+}
+
+.topnav a {
+float: left;
+display: block;
+color: #f2f2f2;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+font-size: 17px;
+}
+
+.topnav a:hover {
+background-color: #ddd;
+color: black;
+}
+
+.active {
+background-color: #4CAF50;
+color: white;
+}
+h1.header-title {
+  font-family: sans-serif, "Helvetica Neue", "Lucida Grande", Arial;
+  letter-spacing: -6px;
+  font-size: 4em;
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+  font-weight: lighter;
+  font-stretch: extra-expanded;
+}
+h1.header-caption {
+  font-family: sans-serif;
+  letter-spacing: -3px;
+  font-size: 3em;
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-style: italic;
+}
+h1 {
+  font-family: 'EB Garamond', serif;
+  letter-spacing: -1px;
+  font-weight: lighter;
+}
+
+h2 {
+  font-family: sans-serif;
+}
+.topnav .icon {
+display: none;
+}
+.icon {
+float: none;
+}
+footer {
+  margin: 100px auto;
+  width:100%;
+  text-align:center;
+}
+
+@media screen and (max-width: 600px) {
+.topnav a {display: none;}
+.topnav a.icon {
+display:block;
+float: none;
+display: block;
+}
+}
+
+@media screen and (max-width:600px) {
+  img.logo {width: 100%;}
+  img.album {width: 100%;}
+
+  body {
+    background-size:contain;
+    background-attachment: scroll;
+  }
+  img.banner {
+    width: 100%;
+  }
+  h1 {
+    padding:0 10px;
+  }
+}
+@media screen and (max-width: 767px) {
+  body {
+    background-size:auto;
+    background-attachment: scroll;
+  }
+}
